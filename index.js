@@ -16,7 +16,7 @@ switch (args[0]) {
   case '--results':
   case '-r':
     if (isNaN(args[1])) {
-      console.log(chalk.bold.red('Error: no poll ID is provided!'));
+      console.log(chalk.bold.red('Err: no poll ID is provided!'));
       break;
     }
     showResults(pollAddress);
@@ -24,7 +24,7 @@ switch (args[0]) {
   case '--vote':
   case '-v':
     if (isNaN(args[1])) {
-      console.log(chalk.bold.red('Error: no poll ID is provided!'));
+      console.log(chalk.bold.red('Err: no poll ID is provided!'));
       break;
     }
     open('http://www.strawpoll.me/' + args[1]);
