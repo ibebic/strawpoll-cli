@@ -10,7 +10,8 @@
     "events": "1.1.1",
     "inquirer": "1.2.2",
     "events": "1.1.1",
-    "inquirer": "1.2.2"
+    "inquirer": "1.2.2",
+    "opn": "4.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -3,6 +3,7 @@
 const inquirer = require('inquirer');
 const request = require('request');
 const chalk = require('chalk');
+const open = require('opn');
 
   let output = [];
   let additionals = [
@@ -33,6 +34,7 @@ function addOptions(originals) {
         json: formattedReq
       }, function(error, response, body) {
         console.log('\nPoll created at http://www.strawpoll.me/' + chalk.bold.green(body.id));
+        open('http://www.strawpoll.me/' + body.id);
       });
     }
   });
