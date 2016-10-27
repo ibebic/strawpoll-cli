@@ -1,0 +1,14 @@
+# editors
+.idea
+.code
+*.sublime-*
+
+# deps
+node_modules
+
+# private
+.env
+
+# logs
+logs/*
+!logs/.gitkeep
